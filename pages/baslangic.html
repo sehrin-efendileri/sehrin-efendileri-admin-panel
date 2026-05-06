@@ -54,43 +54,37 @@
                     </li>
 
                     <li class="nav-item mb-2">
-                        <a class="nav-link text-white" href="#">
-                            Sunucuya Giriş
-                        </a>
-                    </li>
-
-                    <li class="nav-item mb-2">
-                        <a class="nav-link text-white" href="#">
+                        <a class="nav-link text-white" href="konsol-kullanimi.html">
                             Konsol Kullanımı
                         </a>
                     </li>
 
                     <li class="nav-item mb-2">
-                        <a class="nav-link text-white" href="#">
+                        <a class="nav-link text-white" href="admin-komutlari.html">
                             Admin Komutları
                         </a>
                     </li>
 
                     <li class="nav-item mb-2">
-                        <a class="nav-link text-white" href="#">
+                        <a class="nav-link text-white" href="hile-suphesi.html">
                             Hile Şüphesi
                         </a>
                     </li>
 
                     <li class="nav-item mb-2">
-                        <a class="nav-link text-white" href="#">
+                        <a class="nav-link text-white" href="ceza-sistemi.html">
                             Ceza Sistemi
                         </a>
                     </li>
 
                     <li class="nav-item mb-2">
-                        <a class="nav-link text-white" href="#">
+                        <a class="nav-link text-white" href="sss.html">
                             SSS
                         </a>
                     </li>
 
                     <li class="nav-item mb-2">
-                        <a class="nav-link text-white" href="#">
+                        <a class="nav-link text-white" href="hizli-yardim.html">
                             Hızlı Yardım
                         </a>
                     </li>
@@ -102,30 +96,58 @@
             <!-- İçerik -->
             <div class="col-md-9 col-lg-10 p-5">
 
-                <!-- Başlık Kutusu -->
-                <div class="hero-box p-5 rounded mb-4">
+                <!-- Hero -->
+                <div class="hero-box p-5 rounded mb-5">
+
+                    <span class="badge bg-danger mb-3 fs-6">
+                        ŞEHRİN EFENDİLERİ ADMIN REHBERİ
+                    </span>
 
                     <h1 class="fw-bold mb-4">
                         Adminliğe Başlangıç
                     </h1>
 
-                    <p class="lead">
-                        Yeni adminlerin bilmesi gereken temel kurallar ve çalışma mantığı.
+                    <p class="lead mb-0">
+                        Yeni adminlerin bilmesi gereken temel kurallar,
+                        davranış biçimi ve admin mantığı.
                     </p>
 
                 </div>
 
-                <!-- İçerik Kartı -->
-                <div class="card custom-card p-4">
+                <!-- Bilgi Kutusu -->
+                <div class="card custom-card p-4 mb-5 border border-warning">
 
-                    <h3 class="mb-4">
-                        Temel Kurallar
+                    <h3 class="text-warning mb-3">
+                        ⚠ Yetki Değil Sorumluluk
                     </h3>
 
-                    <ul class="guide-list">
+                    <p class="mb-0">
+                        Adminlik oyuncular üzerinde güç göstermek için değil,
+                        sunucunun düzenini korumak için verilir.
+                        Hatalı işlem yapan admin oyuncudan daha fazla zarar verir.
+                    </p>
+
+                </div>
+
+                <!-- Temel Kurallar -->
+                <div class="card custom-card p-4 mb-5">
+
+                    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+
+                        <h2 class="text-danger mb-0">
+                            📌 Temel Kurallar
+                        </h2>
+
+                        <span class="badge bg-danger">
+                            ZORUNLU
+                        </span>
+
+                    </div>
+
+                    <ul class="guide-list mb-0">
 
                         <li>
-                            Adminlik yetki değil sorumluluktur.
+                            Adminlik ego tatmin yeri değildir.
                         </li>
 
                         <li>
@@ -145,10 +167,115 @@
                         </li>
 
                         <li>
-                            Şüpheli durumlarda üst yetkiliye danışılır.
+                            Arkadaş diye oyuncu korunmaz.
+                        </li>
+
+                        <li>
+                            Gereksiz slap/slay/fire gibi işlemler yapılmaz.
+                        </li>
+
+                        <li>
+                            Yetki abuse eden admin doğrudan güven kaybeder.
                         </li>
 
                     </ul>
+
+                </div>
+
+                <!-- Doğru Admin -->
+                <div class="card custom-card p-4 mb-5">
+
+                    <h2 class="text-danger mb-4">
+                        ✅ Doğru Admin Nasıl Davranır?
+                    </h2>
+
+                    <div class="command-box">
+
+                        <h4>
+                            Soğukkanlı Kalır
+                        </h4>
+
+                        <p class="mb-0">
+                            Oyuncu provoke etse bile admin kontrolü kaybetmez.
+                        </p>
+
+                    </div>
+
+                    <div class="command-box">
+
+                        <h4>
+                            Önce İzler Sonra İşlem Uygular
+                        </h4>
+
+                        <p class="mb-0">
+                            Özellikle hile durumlarında acele karar verilmez.
+                        </p>
+
+                    </div>
+
+                    <div class="command-box mb-0">
+
+                        <h4>
+                            Sunucu Düzenini Korur
+                        </h4>
+
+                        <p class="mb-0">
+                            Adminin görevi oyuncuyla kavga etmek değil,
+                            oyunun düzenli ilerlemesini sağlamaktır.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Yanlış Admin -->
+                <div class="card custom-card p-4 mb-5 border border-danger">
+
+                    <h2 class="text-danger mb-4">
+                        ❌ Yapılmaması Gerekenler
+                    </h2>
+
+                    <ul class="guide-list mb-0">
+
+                        <li>
+                            Sinirle kick veya ban atmak
+                        </li>
+
+                        <li>
+                            Arkadaş kayırmak
+                        </li>
+
+                        <li>
+                            Eğlence komutlarını abuse etmek
+                        </li>
+
+                        <li>
+                            Kanıtsız hile banı atmak
+                        </li>
+
+                        <li>
+                            Oyuncuyu küçük düşürmek
+                        </li>
+
+                        <li>
+                            Sürekli tehdit dili kullanmak
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Son Kart -->
+                <div class="card custom-card p-4 border border-success">
+
+                    <h3 class="text-success mb-3">
+                        🎯 Amaç
+                    </h3>
+
+                    <p class="mb-0">
+                        İyi admin görünmez admindir.
+                        Sunucuda kaos çıkmadan düzeni sağlayan kişi başarılı admindir.
+                    </p>
 
                 </div>
 
@@ -157,6 +284,16 @@
         </div>
 
     </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Sayfa Açılınca En Üste Çık -->
+    <script>
+        window.addEventListener("pageshow", function () {
+            window.scrollTo(0, 0);
+        });
+    </script>
 
 </body>
 
