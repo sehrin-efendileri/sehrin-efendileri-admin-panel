@@ -133,7 +133,7 @@
                     </p>
 
                     <p class="mb-4">
-                        Açılan alana komut yazılır ve Enter'a basılır.
+                        Açılan alana komut yazılır ve Enter tuşuna basılır.
                     </p>
 
                     <img src="../assets/img/konsol-acma.jpg"
@@ -176,11 +176,7 @@
                     </h2>
 
                     <p>
-                        Konsolu açtıktan sonra önce admin nickinizi yazıp Enter'a basın.
-                    </p>
-
-                    <p>
-                        Daha sonra aşağıdaki komutu yazın:
+                        Konsolu açtıktan sonra aşağıdaki komutu yazın:
                     </p>
 
                     <code>
@@ -188,7 +184,7 @@
                     </code>
 
                     <p class="mt-4 mb-4">
-                        Şifreyi yazdıktan sonra tekrar Enter'a basın.
+                        Şifreyi yazdıktan sonra Enter tuşuna basın.
                     </p>
 
                     <img src="../assets/img/admin-giris.jpg"
@@ -258,8 +254,15 @@
 
     </div>
 
-    <!-- Bootstrap -->
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Sayfa Açılınca En Üste Çık -->
+    <script>
+        window.addEventListener("pageshow", function () {
+            window.scrollTo(0, 0);
+        });
+    </script>
 
 </body>
 
