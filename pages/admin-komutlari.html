@@ -1,1 +1,542 @@
+<!DOCTYPE html>
+<html lang="tr">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Admin Komutları
+    </title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark px-4 py-3 border-bottom border-secondary">
+
+        <span class="navbar-brand fw-bold">
+            ŞEHRİN EFENDİLERİ
+        </span>
+
+    </nav>
+
+    <!-- Ana Alan -->
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <!-- Sidebar -->
+            <div class="col-md-3 col-lg-2 sidebar p-4">
+
+                <h5 class="text-danger mb-4">
+                    MENÜ
+                </h5>
+
+                <ul class="nav flex-column">
+
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-white" href="../index.html">
+                            Ana Sayfa
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-white" href="baslangic.html">
+                            Adminliğe Başlangıç
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-white" href="sunucuya-giris.html">
+                            Sunucuya Giriş
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-white" href="konsol-kullanimi.html">
+                            Konsol Kullanımı
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a class="nav-link active-link" href="admin-komutlari.html">
+                            Admin Komutları
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-white" href="hile-suphesi.html">
+                            Hile Şüphesi
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-white" href="ceza-sistemi.html">
+                            Ceza Sistemi
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-white" href="sss.html">
+                            SSS
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-white" href="hizli-yardim.html">
+                            Hızlı Yardım
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- İçerik -->
+            <div class="col-md-9 col-lg-10 p-5">
+
+                <!-- Hero -->
+                <div class="hero-box p-5 rounded mb-5">
+
+                    <span class="badge bg-danger mb-3 fs-6">
+                        ŞEHRİN EFENDİLERİ ADMIN REHBERİ
+                    </span>
+
+                    <h1 class="fw-bold mb-4">
+                        Admin Komutları
+                    </h1>
+
+                    <p class="lead mb-0">
+                        Sunucu düzeni, oyuncu yönetimi ve hızlı müdahale için kullanılan temel admin komutları.
+                    </p>
+
+                </div>
+
+                <!-- Bilgi Kutusu -->
+                <div class="card custom-card p-4 mb-5 border border-warning">
+
+                    <h3 class="text-warning mb-3">
+                        ⚠ Önemli Bilgi
+                    </h3>
+
+                    <p class="mb-0">
+                        Komutları kullanmadan önce oyuncunun gerçekten kural ihlali yaptığından emin olun.
+                        Gereksiz veya yanlış admin kullanımı oyuncu şikayetlerine ve yetki sorunlarına neden olabilir.
+                    </p>
+
+                </div>
+
+                <!-- İletişim -->
+                <div class="card custom-card p-4 mb-5">
+
+                    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+
+                        <h2 class="text-danger mb-0">
+                            📢 İletişim Komutları
+                        </h2>
+
+                        <span class="badge bg-secondary">
+                            ADMIN İLETİŞİMİ
+                        </span>
+
+                    </div>
+
+                    <!-- Komut -->
+                    <div class="command-box">
+
+                        <h4>
+                            amx_chat
+                        </h4>
+
+                        <p>
+                            Sadece adminlerin görebileceği özel mesaj gönderir.
+                        </p>
+
+                        <div class="command-type console-command">
+                            Konsola Yaz
+                        </div>
+
+                        <code>
+                            amx_chat Efendiler her zaman en iyisi.
+                        </code>
+
+                    </div>
+
+                    <!-- Komut -->
+                    <div class="command-box">
+
+                        <h4>
+                            amx_psay
+                        </h4>
+
+                        <p>
+                            Belirli bir oyuncuya özel mesaj gönderir.
+                        </p>
+
+                        <div class="command-type console-command">
+                            Konsola Yaz
+                        </div>
+
+                        <code>
+                            amx_psay Levent deneme :)
+                        </code>
+
+                    </div>
+
+                    <!-- Komut -->
+                    <div class="command-box mb-0">
+
+                        <h4>
+                            amx_tsay
+                        </h4>
+
+                        <p>
+                            Herkesin göreceği üst ekran mesajı gönderir.
+                        </p>
+
+                        <div class="command-type console-command">
+                            Konsola Yaz
+                        </div>
+
+                        <code>
+                            amx_tsay green Pusu yasaktır!
+                        </code>
+
+                    </div>
+
+                </div>
+
+                <!-- Ceza -->
+                <div class="card custom-card p-4 mb-5">
+
+                    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+
+                        <h2 class="text-danger mb-0">
+                            ⚖ Ceza Komutları
+                        </h2>
+
+                        <span class="badge bg-danger">
+                            DİKKATLİ KULLAN
+                        </span>
+
+                    </div>
+
+                    <div class="command-box">
+
+                        <h4>
+                            amx_gag
+                        </h4>
+
+                        <p>
+                            Oyuncunun yazı yazmasını engeller.
+                        </p>
+
+                        <div class="command-type console-command">
+                            Konsola Yaz
+                        </div>
+
+                        <code>
+                            amx_gag Levent 30
+                        </code>
+
+                    </div>
+
+                    <div class="command-box">
+
+                        <h4>
+                            /ungagmenu
+                        </h4>
+
+                        <p>
+                            Gag atılmış oyuncuların gagını kaldırma menüsünü açar.
+                        </p>
+
+                        <div class="command-type chat-command">
+                            Chate Yaz
+                        </div>
+
+                        <code>
+                            /ungagmenu
+                        </code>
+
+                    </div>
+
+                    <div class="command-box">
+
+                        <h4>
+                            amx_kick
+                        </h4>
+
+                        <p>
+                            Oyuncuyu sunucudan atar.
+                        </p>
+
+                        <div class="command-type console-command">
+                            Konsola Yaz
+                        </div>
+
+                        <code>
+                            amx_kick Levent
+                        </code>
+
+                    </div>
+
+                    <div class="command-box">
+
+                        <h4>
+                            amx_ucanban
+                        </h4>
+
+                        <p>
+                            Oyuncuya SteamID üzerinden kombat ban uygular.
+                        </p>
+
+                        <div class="command-type console-command">
+                            Konsola Yaz
+                        </div>
+
+                        <code>
+                            amx_ucanban
+                        </code>
+
+                    </div>
+
+                    <div class="command-box">
+
+                        <h4>
+                            amx_slap
+                        </h4>
+
+                        <p>
+                            Oyuncuyu tokatlar ve uyarır.
+                            Sayı girilirse oyuncunun canı belirtilen miktarda azalır.
+                        </p>
+
+                        <div class="command-type console-command">
+                            Konsola Yaz
+                        </div>
+
+                        <code>
+                            amx_slap Levent
+                        </code>
+
+                        <br><br>
+
+                        <code>
+                            amx_slap Levent 50
+                        </code>
+
+                    </div>
+
+                    <div class="command-box mb-0">
+
+                        <h4>
+                            amx_slay
+                        </h4>
+
+                        <p>
+                            Oyuncuyu anında öldürür.
+                        </p>
+
+                        <div class="command-type console-command">
+                            Konsola Yaz
+                        </div>
+
+                        <code>
+                            amx_slay Levent
+                        </code>
+
+                    </div>
+
+                </div>
+
+                <!-- Yönetim -->
+                <div class="card custom-card p-4 mb-5">
+
+                    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+
+                        <h2 class="text-danger mb-0">
+                            🛠 Yönetim Komutları
+                        </h2>
+
+                        <span class="badge bg-primary">
+                            SUNUCU YÖNETİMİ
+                        </span>
+
+                    </div>
+
+                    <div class="command-box">
+
+                        <h4>
+                            amx_map
+                        </h4>
+
+                        <p>
+                            Haritayı değiştirir.
+                        </p>
+
+                        <div class="command-type console-command">
+                            Konsola Yaz
+                        </div>
+
+                        <code>
+                            amx_map fy_pool_day
+                        </code>
+
+                    </div>
+
+                    <div class="command-box">
+
+                        <h4>
+                            amx_cvar sv_restart 1
+                        </h4>
+
+                        <p>
+                            Raundu yeniden başlatır.
+                        </p>
+
+                        <div class="command-type console-command">
+                            Konsola Yaz
+                        </div>
+
+                        <code>
+                            amx_cvar sv_restart 1
+                        </code>
+
+                    </div>
+
+                    <div class="command-box">
+
+                        <h4>
+                            amx_transfer
+                        </h4>
+
+                        <p>
+                            Oyuncunun takımını değiştirir.
+                        </p>
+
+                        <div class="command-type console-command">
+                            Konsola Yaz
+                        </div>
+
+                        <code>
+                            amx_transfer Levent ct
+                        </code>
+
+                    </div>
+
+                    <div class="command-box mb-0">
+
+                        <h4>
+                            amx_nick
+                        </h4>
+
+                        <p>
+                            Oyuncunun nickini değiştirir.
+                        </p>
+
+                        <div class="command-type console-command">
+                            Konsola Yaz
+                        </div>
+
+                        <code>
+                            amx_nick Levent YeniNick
+                        </code>
+
+                    </div>
+
+                </div>
+
+                <!-- Eğlence -->
+                <div class="card custom-card p-4 mb-5">
+
+                    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+
+                        <h2 class="text-danger mb-0">
+                            🎮 Eğlence Komutları
+                        </h2>
+
+                        <span class="badge bg-warning text-dark">
+                            ABUSE ETME
+                        </span>
+
+                    </div>
+
+                    <div class="command-box">
+
+                        <h4>
+                            amx_fire
+                        </h4>
+
+                        <p>
+                            Oyuncuyu ateşe verir.
+                        </p>
+
+                        <div class="command-type console-command">
+                            Konsola Yaz
+                        </div>
+
+                        <code>
+                            amx_fire Levent 100
+                        </code>
+
+                    </div>
+
+                    <div class="command-box">
+
+                        <h4>
+                            amx_rocket
+                        </h4>
+
+                        <p>
+                            Oyuncuyu havaya uçurur.
+                        </p>
+
+                        <div class="command-type console-command">
+                            Konsola Yaz
+                        </div>
+
+                        <code>
+                            amx_rocket Levent
+                        </code>
+
+                    </div>
+
+                    <div class="command-box mb-0">
+
+                        <h4>
+                            amx_uberslap
+                        </h4>
+
+                        <p>
+                            Oyuncuyu sürekli tokatlar.
+                        </p>
+
+                        <div class="command-type console-command">
+                            Konsola Yaz
+                        </div>
+
+                        <code>
+                            amx_uberslap Levent
+                        </code>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
