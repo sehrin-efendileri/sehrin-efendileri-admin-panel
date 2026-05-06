@@ -4,8 +4,8 @@ body {
     min-height: 100vh;
 
     background:
-        linear-gradient(rgba(0, 0, 0, 0.86),
-        rgba(0, 0, 0, 0.86)),
+        linear-gradient(rgba(0, 0, 0, 0.92),
+        rgba(0, 0, 0, 0.92)),
         url('../img/background.jpg');
 
     background-size: cover;
@@ -79,6 +79,21 @@ body {
     backdrop-filter: blur(4px);
 
     border-radius: 16px;
+
+    overflow: hidden;
+    position: relative;
+}
+
+.custom-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background: rgba(255,77,77,0.45);
 }
 
 .custom-card:hover {
@@ -154,6 +169,14 @@ code {
     box-shadow: none !important;
 }
 
+/* Görseller */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* Yazılar */
 
 p {
@@ -215,28 +238,96 @@ a {
 
 @media (max-width: 768px) {
 
+    body {
+        background-attachment: scroll;
+    }
+
+    /* Sidebar */
+
     .sidebar {
         min-height: auto;
+        padding: 25px !important;
     }
 
-    .hero-box {
-        padding: 30px !important;
-    }
-
-    h1 {
-        font-size: 32px;
-    }
+    /* Menü */
 
     .nav-link {
         font-size: 15px;
+        padding: 10px 12px;
+        margin-bottom: 6px;
     }
+
+    /* İçerik */
+
+    .col-md-9.col-lg-10 {
+        padding: 20px !important;
+    }
+
+    /* Hero */
+
+    .hero-box {
+        padding: 24px !important;
+        margin-bottom: 30px !important;
+    }
+
+    .hero-box h1 {
+        font-size: 38px;
+        line-height: 1.1;
+    }
+
+    .hero-box .lead {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    /* Kartlar */
+
+    .custom-card {
+        padding: 24px !important;
+        margin-bottom: 28px !important;
+    }
+
+    .custom-card h2 {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .custom-card h3 {
+        font-size: 28px;
+    }
+
+    /* Yazılar */
+
+    p {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+    li {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    /* Komut Kutuları */
 
     .command-box {
         padding: 18px;
     }
 
+    /* Kod */
+
     code {
-        font-size: 13px;
+        font-size: 15px;
+        padding: 16px;
+        overflow-x: auto;
+    }
+
+    /* Görseller */
+
+    img {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
     }
 
 }
