@@ -1,1 +1,434 @@
+<!DOCTYPE html>
+<html lang="tr">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Hile Şüphesi
+    </title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark px-4 py-3 border-bottom border-secondary">
+
+        <span class="navbar-brand fw-bold">
+            ŞEHRİN EFENDİLERİ
+        </span>
+
+    </nav>
+
+    <!-- Ana Alan -->
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <!-- Sidebar -->
+            <div class="col-md-3 col-lg-2 sidebar p-4">
+
+                <h5 class="text-danger mb-4">
+                    MENÜ
+                </h5>
+
+                <ul class="nav flex-column">
+
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-white" href="../index.html">
+                            Ana Sayfa
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-white" href="baslangic.html">
+                            Adminliğe Başlangıç
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-white" href="konsol-kullanimi.html">
+                            Konsol Kullanımı
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-white" href="admin-komutlari.html">
+                            Admin Komutları
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a class="nav-link active-link" href="hile-suphesi.html">
+                            Hile Şüphesi
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-white" href="ceza-sistemi.html">
+                            Ceza Sistemi
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- İçerik -->
+            <div class="col-md-9 col-lg-10 p-5">
+
+                <!-- Hero -->
+                <div class="hero-box p-5 rounded mb-5">
+
+                    <span class="badge bg-danger mb-3 fs-6">
+                        ŞEHRİN EFENDİLERİ ADMIN REHBERİ
+                    </span>
+
+                    <h1 class="fw-bold mb-4">
+                        Hile Şüphesi
+                    </h1>
+
+                    <p class="lead mb-0">
+                        Şüpheli oyuncuların nasıl inceleneceği,
+                        Fungun tarama süreci ve uygulanacak admin prosedürleri.
+                    </p>
+
+                </div>
+
+                <!-- Kritik Uyarı -->
+                <div class="card custom-card p-4 mb-5 border border-danger">
+
+                    <h3 class="text-danger mb-3">
+                        ⚠ Kritik Uyarı
+                    </h3>
+
+                    <p class="mb-0">
+                        Güçlü oynayan her oyuncu hile değildir.
+                        Kanıtsız işlem uygulanmaz.
+                        Adminin görevi sinirle ban atmak değil,
+                        doğru kararı vermektir.
+                    </p>
+
+                </div>
+
+                <!-- Şüpheli Hareketler -->
+                <div class="card custom-card p-4 mb-5">
+
+                    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+
+                        <h2 class="text-danger mb-0">
+                            🎯 Şüpheli Hareketler
+                        </h2>
+
+                        <span class="badge bg-warning text-dark">
+                            DİKKATLİ İNCELE
+                        </span>
+
+                    </div>
+
+                    <ul class="guide-list mb-0">
+
+                        <li>
+                            Sürekli duvar arkası takip yapmak
+                        </li>
+
+                        <li>
+                            İnsan dışı aim geçişleri
+                        </li>
+
+                        <li>
+                            Flashlı oyuncuları sürekli bulmak
+                        </li>
+
+                        <li>
+                            Ses olmadan pozisyon tahmini yapmak
+                        </li>
+
+                        <li>
+                            Crosshair ile oyuncu takip etmek
+                        </li>
+
+                        <li>
+                            Aşırı tutarsız veya anormal refleksler
+                        </li>
+
+                    </ul>
+
+                    <hr class="border-secondary my-4">
+
+                    <p class="mb-0">
+                        Tek başına hiçbir hareket ban sebebi değildir.
+                        Oyuncu birkaç round dikkatli şekilde spectlenmelidir.
+                    </p>
+
+                </div>
+
+                <!-- İlk Yapılması Gerekenler -->
+                <div class="card custom-card p-4 mb-5">
+
+                    <h2 class="text-danger mb-4">
+                        👁 İlk Yapılması Gerekenler
+                    </h2>
+
+                    <div class="command-box">
+
+                        <h4>
+                            Oyuncuyu Specte Al
+                        </h4>
+
+                        <p class="mb-0">
+                            Oyuncu birkaç round dikkatli şekilde izlenmelidir.
+                        </p>
+
+                    </div>
+
+                    <div class="command-box">
+
+                        <h4>
+                            Acele İşlem Yapma
+                        </h4>
+
+                        <p class="mb-0">
+                            Şüphe oluşur oluşmaz kick veya ban işlemi uygulanmaz.
+                        </p>
+
+                    </div>
+
+                    <div class="command-box">
+
+                        <h4>
+                            Şüphe Devam Ediyorsa Tarama İste
+                        </h4>
+
+                        <p class="mb-0">
+                            Oyuncudan Fungun taraması yapması istenir.
+                        </p>
+
+                    </div>
+
+                    <div class="command-box mb-0">
+
+                        <h4>
+                            Gerekiyorsa Diğer Adminlere Sor
+                        </h4>
+
+                        <p class="mb-0">
+                            Kararsız kalınan durumlarda başka admin görüşü alınabilir.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Fungun Tarama -->
+                <div class="card custom-card p-4 mb-5">
+
+                    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+
+                        <h2 class="text-danger mb-0">
+                            🛡 Fungun Taraması
+                        </h2>
+
+                        <span class="badge bg-primary">
+                            ANA TARAMA SİSTEMİ
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Şüpheli oyunculardan Fungun taraması yapması istenir.
+                    </p>
+
+                    <p>
+                        Oyuncuya:
+                    </p>
+
+                    <div class="command-box">
+
+                        <code>
+                            Google'a "fungun" yazıp ilk çıkan Fungun sitesine gir.
+                        </code>
+
+                    </div>
+
+                    <p class="mt-4">
+                        şeklinde tarif yapılır.
+                    </p>
+
+                    <hr class="border-secondary my-4">
+
+                    <h4 class="mb-3">
+                        📥 Tarama Nasıl Başlatılır?
+                    </h4>
+
+                    <ul class="guide-list">
+
+                        <li>
+                            Siteye girilir
+                        </li>
+
+                        <li>
+                            DOWNLOAD FOR WINDOWS butonuna basılır
+                        </li>
+
+                        <li>
+                            Program bilgisayara indirilir
+                        </li>
+
+                        <li>
+                            Yönetici olarak çalıştırılır
+                        </li>
+
+                        <li>
+                            Scan butonuna basılır
+                        </li>
+
+                        <li>
+                            Tarama tamamlanınca oyuncu admine haber verir
+                        </li>
+
+                    </ul>
+
+                    <img src="../assets/img/fungun-indirme.jpg"
+                         alt="Fungun İndirme"
+                         class="img-fluid rounded border border-secondary mt-4"
+                         loading="lazy">
+
+                </div>
+
+                <!-- Sonuç Kontrol -->
+                <div class="card custom-card p-4 mb-5">
+
+                    <h2 class="text-danger mb-4">
+                        📋 Tarama Sonucu Kontrolü
+                    </h2>
+
+                    <p>
+                        Tarama bittikten sonra admin Fungun sitesinde aşağı kaydırarak
+                        son tarananlar listesini kontrol eder.
+                    </p>
+
+                    <p>
+                        İstenirse site dili Türkçeye çevrilebilir.
+                    </p>
+
+                    <p>
+                        Oyuncunun nicki bulunur ve tarama sonucu kontrol edilir.
+                    </p>
+
+                    <ul class="guide-list">
+
+                        <li>
+                            Clean → Oyuncu oyuna devam edebilir
+                        </li>
+
+                        <li>
+                            Suspicious → Oyuncu banlanır
+                        </li>
+
+                    </ul>
+
+                    <img src="../assets/img/fungun-sonuc-kontrol.jpg"
+                         alt="Fungun Sonuç Kontrol"
+                         class="img-fluid rounded border border-secondary mt-4"
+                         loading="lazy">
+
+                </div>
+
+                <!-- Taramadan Kaçan Oyuncu -->
+                <div class="card custom-card p-4 mb-5 border border-warning">
+
+                    <h2 class="text-warning mb-4">
+                        ⏳ Taramadan Kaçan Oyuncu
+                    </h2>
+
+                    <p>
+                        Sürekli oyalayan,
+                        oyundan çıkan,
+                        bahane üreten veya taramayı reddeden oyuncular şüpheli kabul edilir.
+                    </p>
+
+                    <p class="mb-0">
+                        Böyle durumlarda sunucu kurallarına göre kick,
+                        geçici ban veya gerekli diğer işlemler uygulanabilir.
+                    </p>
+
+                </div>
+
+                <!-- Yapılmaması Gerekenler -->
+                <div class="card custom-card p-4 mb-5 border border-danger">
+
+                    <h2 class="text-danger mb-4">
+                        ❌ Yapılmaması Gerekenler
+                    </h2>
+
+                    <ul class="guide-list mb-0">
+
+                        <li>
+                            Kanıtsız ban atmak
+                        </li>
+
+                        <li>
+                            Oyuncuyu herkesin içinde aşağılamak
+                        </li>
+
+                        <li>
+                            Sinirle işlem yapmak
+                        </li>
+
+                        <li>
+                            Oyuncuyla ego savaşına girmek
+                        </li>
+
+                        <li>
+                            Kesin hileci ilan etmek
+                        </li>
+
+                        <li>
+                            Yetersiz inceleme yapmak
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Son Mesaj -->
+                <div class="card custom-card p-4 border border-success">
+
+                    <h3 class="text-success mb-3">
+                        🎯 Sonuç
+                    </h3>
+
+                    <p class="mb-0">
+                        İyi admin rastgele işlem yapan değil,
+                        kanıta göre karar verendir.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Sayfa Açılınca En Üste Çık -->
+    <script>
+        window.addEventListener("pageshow", function () {
+            window.scrollTo(0, 0);
+        });
+    </script>
+
+</body>
+
+</html>
