@@ -1,1 +1,473 @@
+<!DOCTYPE html>
+<html lang="tr">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Ceza Sistemi
+    </title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark px-4 py-3 border-bottom border-secondary">
+
+        <span class="navbar-brand fw-bold">
+            ŞEHRİN EFENDİLERİ
+        </span>
+
+    </nav>
+
+    <!-- Ana Alan -->
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <!-- Sidebar -->
+            <div class="col-md-3 col-lg-2 sidebar p-4">
+
+                <h5 class="text-danger mb-4">
+                    MENÜ
+                </h5>
+
+                <ul class="nav flex-column">
+
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-white" href="../index.html">
+                            Ana Sayfa
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-white" href="baslangic.html">
+                            Adminliğe Başlangıç
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-white" href="konsol-kullanimi.html">
+                            Konsol Kullanımı
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-white" href="admin-komutlari.html">
+                            Admin Komutları
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-white" href="hile-suphesi.html">
+                            Hile Şüphesi
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a class="nav-link active-link" href="ceza-sistemi.html">
+                            Ceza Sistemi
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- İçerik -->
+            <div class="col-md-9 col-lg-10 p-5">
+
+                <!-- Hero -->
+                <div class="hero-box p-5 rounded mb-5">
+
+                    <span class="badge bg-danger mb-3 fs-6">
+                        ŞEHRİN EFENDİLERİ ADMIN REHBERİ
+                    </span>
+
+                    <h1 class="fw-bold mb-4">
+                        Ceza Sistemi
+                    </h1>
+
+                    <p class="lead mb-0">
+                        Sunucuda uygulanacak ceza sistemi,
+                        admin müdahale prosedürleri ve işlem kuralları.
+                    </p>
+
+                </div>
+
+                <!-- Kritik Uyarı -->
+                <div class="card custom-card p-4 mb-5 border border-danger">
+
+                    <h3 class="text-danger mb-3">
+                        ⚠ Kritik Uyarı
+                    </h3>
+
+                    <p class="mb-0">
+                        Ceza sistemi kişisel kararlara göre değil,
+                        sunucu kurallarına göre uygulanır.
+                        Adminin görevi oyuncu avlamak değil,
+                        sunucu düzenini korumaktır.
+                    </p>
+
+                </div>
+
+                <!-- Uyarı Sistemi -->
+                <div class="card custom-card p-4 mb-5">
+
+                    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+
+                        <h2 class="text-danger mb-0">
+                            ⚠ Uyarı Sistemi
+                        </h2>
+
+                        <span class="badge bg-warning text-dark">
+                            İLK AŞAMA
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Bazı durumlarda oyuncuya direkt işlem uygulanmaz.
+                        Önce uyarı verilir.
+                    </p>
+
+                    <h4 class="mt-4 mb-3">
+                        Uyarı Gerektiren Durumlar
+                    </h4>
+
+                    <ul class="guide-list">
+
+                        <li>
+                            Pusmak
+                        </li>
+
+                        <li>
+                            Küçük kural ihlalleri
+                        </li>
+
+                        <li>
+                            Oyun düzenini hafif bozmak
+                        </li>
+
+                    </ul>
+
+                    <hr class="border-secondary my-4">
+
+                    <h4 class="mb-3">
+                        İşleyiş
+                    </h4>
+
+                    <ul class="guide-list mb-0">
+
+                        <li>
+                            İlk ihlalde uyarı verilir
+                        </li>
+
+                        <li>
+                            Devam ederse ikinci uyarı verilir
+                        </li>
+
+                        <li>
+                            3. ihlalde gerekli ceza uygulanır
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Ban Sistemi -->
+                <div class="card custom-card p-4 mb-5 border border-danger">
+
+                    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+
+                        <h2 class="text-danger mb-0">
+                            ⛔ Ban Sistemi
+                        </h2>
+
+                        <span class="badge bg-danger">
+                            SÜRESİZ ID BAN
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Sunucuda geçici ban sistemi kullanılmaz.
+                    </p>
+
+                    <ul class="guide-list">
+
+                        <li>
+                            Ban işlemleri <strong>amx_ucanban</strong> komutu ile uygulanır
+                        </li>
+
+                        <li>
+                            Atılan banlar ID ban şeklindedir
+                        </li>
+
+                        <li>
+                            Banlar süresizdir
+                        </li>
+
+                        <li>
+                            Yetkili kaldırmadan ban kalkmaz
+                        </li>
+
+                    </ul>
+
+                    <hr class="border-secondary my-4">
+
+                    <h4 class="mb-3">
+                        Direkt Ban Gerektiren Durumlar
+                    </h4>
+
+                    <ul class="guide-list mb-0">
+
+                        <li>
+                            Küfür
+                        </li>
+
+                        <li>
+                            Hakaret
+                        </li>
+
+                        <li>
+                            Argo
+                        </li>
+
+                        <li>
+                            Hile
+                        </li>
+
+                        <li>
+                            Fungun taramasında suspicious sonuç alınması
+                        </li>
+
+                        <li>
+                            Sunucu huzurunu ciddi şekilde bozmak
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Gag Sistemi -->
+                <div class="card custom-card p-4 mb-5">
+
+                    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+
+                        <h2 class="text-danger mb-0">
+                            🔇 Gag Sistemi
+                        </h2>
+
+                        <span class="badge bg-secondary">
+                            GEÇİCİ SUSTURMA
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Gag sistemi geçici susturma amacıyla kullanılır.
+                    </p>
+
+                    <h4 class="mt-4 mb-3">
+                        Gag Kullanılabilecek Durumlar
+                    </h4>
+
+                    <ul class="guide-list">
+
+                        <li>
+                            Flood yapmak
+                        </li>
+
+                        <li>
+                            Gereksiz chat spamı
+                        </li>
+
+                        <li>
+                            Sürekli anlamsız yazı yazmak
+                        </li>
+
+                    </ul>
+
+                    <hr class="border-secondary my-4">
+
+                    <p>
+                        Maksimum gag süresi 1 gündür.
+                    </p>
+
+                    <p class="mb-0">
+                        VIP oyuncular mikrofon/ses özelliklerini kurallar dahilinde kullanabilir.
+                        Diğer oyuncuların ses trollüğü yapmasına izin verilmez.
+                    </p>
+
+                </div>
+
+                <!-- Hile Durumu -->
+                <div class="card custom-card p-4 mb-5">
+
+                    <h2 class="text-danger mb-4">
+                        🎯 Hile Durumu
+                    </h2>
+
+                    <ul class="guide-list">
+
+                        <li>
+                            Önce oyuncu specte alınır ve izlenir
+                        </li>
+
+                        <li>
+                            Şüphe devam ederse Fungun taraması istenir
+                        </li>
+
+                        <li>
+                            Suspicious sonuç çıkarsa direkt ID ban uygulanır
+                        </li>
+
+                    </ul>
+
+                    <hr class="border-secondary my-4">
+
+                    <p class="mb-0">
+                        Hile prosedürünün detayları için
+                        "Hile Şüphesi" sayfasına bakınız.
+                    </p>
+
+                </div>
+
+                <!-- Yapılmaması Gerekenler -->
+                <div class="card custom-card p-4 mb-5 border border-danger">
+
+                    <h2 class="text-danger mb-4">
+                        ❌ Yapılmaması Gerekenler
+                    </h2>
+
+                    <ul class="guide-list mb-0">
+
+                        <li>
+                            Kanıtsız hile banı atmak
+                        </li>
+
+                        <li>
+                            Arkadaş kayırmak
+                        </li>
+
+                        <li>
+                            Sinirle işlem yapmak
+                        </li>
+
+                        <li>
+                            Oyuncuyla ego savaşına girmek
+                        </li>
+
+                        <li>
+                            Gereksiz slap/slay kullanmak
+                        </li>
+
+                        <li>
+                            Kişisel sebeplerle ceza uygulamak
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Örnek Senaryolar -->
+                <div class="card custom-card p-4 mb-5">
+
+                    <h2 class="text-danger mb-4">
+                        📌 Örnek Senaryolar
+                    </h2>
+
+                    <div class="command-box">
+
+                        <h4>
+                            Oyuncu Pusuyor
+                        </h4>
+
+                        <p class="mb-0">
+                            Önce uyarılır.
+                            Devam ederse ikinci uyarı verilir.
+                            3. ihlalde gerekli ceza uygulanır.
+                        </p>
+
+                    </div>
+
+                    <div class="command-box">
+
+                        <h4>
+                            Oyuncu Küfür Ediyor
+                        </h4>
+
+                        <p class="mb-0">
+                            Direkt <strong>amx_ucanban</strong> ile ID ban uygulanır.
+                        </p>
+
+                    </div>
+
+                    <div class="command-box">
+
+                        <h4>
+                            Fungun Sonucu Suspicious Çıktı
+                        </h4>
+
+                        <p class="mb-0">
+                            Direkt ID ban uygulanır.
+                        </p>
+
+                    </div>
+
+                    <div class="command-box mb-0">
+
+                        <h4>
+                            Oyuncu Sadece Güçlü Oynuyor
+                        </h4>
+
+                        <p class="mb-0">
+                            Acele işlem yapılmaz.
+                            Oyuncu specte alınır ve dikkatli şekilde izlenir.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Son Kart -->
+                <div class="card custom-card p-4 border border-success">
+
+                    <h3 class="text-success mb-3">
+                        🎯 Sonuç
+                    </h3>
+
+                    <p class="mb-0">
+                        İyi admin en ağır cezayı veren değil,
+                        doğru durumda doğru işlemi uygulayandır.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Sayfa Açılınca En Üste Çık -->
+    <script>
+        window.addEventListener("pageshow", function () {
+            window.scrollTo(0, 0);
+        });
+    </script>
+
+</body>
+
+</html>
