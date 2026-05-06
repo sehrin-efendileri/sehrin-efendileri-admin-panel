@@ -89,6 +89,71 @@ body {
         0 0 20px rgba(255, 77, 77, 0.15);
 }
 
+/* Komut Kutuları */
+
+.command-box {
+    background-color: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 24px;
+
+    transition: 0.25s ease;
+}
+
+.command-box:hover {
+    border-color: rgba(255,77,77,0.45);
+    transform: translateY(-2px);
+}
+
+/* Komut Tipi */
+
+.command-type {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+
+.console-command {
+    background-color: rgba(255,77,77,0.18);
+    color: #ff4d4d;
+}
+
+.chat-command {
+    background-color: rgba(0,153,255,0.18);
+    color: #4db8ff;
+}
+
+/* Kod Kutuları */
+
+code {
+    display: block;
+    background-color: #111111;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 14px;
+    color: #ff4d4d;
+    font-size: 15px;
+    margin-top: 10px;
+    word-break: break-word;
+}
+
+/* Form */
+
+.form-control {
+    padding: 14px;
+}
+
+.form-control:focus {
+    background-color: #111 !important;
+    color: white !important;
+    border-color: #ff4d4d !important;
+    box-shadow: none !important;
+}
+
 /* Yazılar */
 
 p {
@@ -116,6 +181,15 @@ h1, h2, h3, h4, h5 {
 
 a {
     text-decoration: none !important;
+}
+
+/* Badge */
+
+.badge {
+    padding: 8px 14px;
+    border-radius: 30px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
 }
 
 /* Scrollbar */
@@ -155,6 +229,14 @@ a {
 
     .nav-link {
         font-size: 15px;
+    }
+
+    .command-box {
+        padding: 18px;
+    }
+
+    code {
+        font-size: 13px;
     }
 
 }
