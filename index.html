@@ -1,274 +1,84 @@
 <!DOCTYPE html>
 <html lang="tr">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>
-        Şehrin Efendileri Admin Paneli
-    </title>
-
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-          rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet"
-          href="assets/css/style.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şehrin Efendileri Admin Paneli</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-
-    <!-- Navbar -->
     <nav class="navbar navbar-dark bg-dark px-4 py-3 border-bottom border-secondary">
-
-        <span class="navbar-brand fw-bold">
-            ŞEHRİN EFENDİLERİ
-        </span>
-
+        <span class="navbar-brand fw-bold">ŞEHRİN EFENDİLERİ</span>
     </nav>
 
-    <!-- Ana Alan -->
     <div class="container-fluid">
-
         <div class="row">
-
-            <!-- Sidebar -->
             <div class="col-md-3 col-lg-2 sidebar p-4">
-
-                <h5 class="text-danger mb-4">
-                    MENÜ
-                </h5>
-
+                <h5 class="text-danger mb-4">MENÜ</h5>
                 <ul class="nav flex-column">
-
-                    <li class="nav-item mb-2">
-                        <a class="nav-link active-link"
-                           href="index.html">
-                            Ana Sayfa
-                        </a>
-                    </li>
-
-                    <li class="nav-item mb-2">
-                        <a class="nav-link text-white"
-                           href="pages/baslangic.html">
-                            Adminliğe Başlangıç
-                        </a>
-                    </li>
-
-                    <li class="nav-item mb-2">
-                        <a class="nav-link text-white"
-                           href="pages/konsol-kullanimi.html">
-                            Konsol Kullanımı
-                        </a>
-                    </li>
-
-                    <li class="nav-item mb-2">
-                        <a class="nav-link text-white"
-                           href="pages/admin-komutlari.html">
-                            Admin Komutları
-                        </a>
-                    </li>
-
-                    <li class="nav-item mb-2">
-                        <a class="nav-link text-white"
-                           href="pages/hile-suphesi.html">
-                            Hile Şüphesi
-                        </a>
-                    </li>
-
-                    <li class="nav-item mb-2">
-                        <a class="nav-link text-white"
-                           href="pages/ceza-sistemi.html">
-                            Ceza Sistemi
-                        </a>
-                    </li>
-
+                    <li class="nav-item mb-2"><a class="nav-link active-link" href="index.html#icerik">Ana Sayfa</a></li>
+                    <li class="nav-item mb-2"><a class="nav-link text-white" href="pages/baslangic.html#icerik">Adminliğe Başlangıç</a></li>
+                    <li class="nav-item mb-2"><a class="nav-link text-white" href="pages/konsol-kullanimi.html#icerik">Konsol Kullanımı</a></li>
+                    <li class="nav-item mb-2"><a class="nav-link text-white" href="pages/admin-komutlari.html#icerik">Admin Komutları</a></li>
+                    <li class="nav-item mb-2"><a class="nav-link text-white" href="pages/hile-suphesi.html#icerik">Hile Şüphesi</a></li>
+                    <li class="nav-item mb-2"><a class="nav-link text-white" href="pages/ceza-sistemi.html#icerik">Ceza Sistemi</a></li>
                 </ul>
-
             </div>
 
-            <!-- İçerik -->
-            <div class="col-md-9 col-lg-10 p-5">
-
-                <!-- Hero -->
+            <div id="icerik" class="col-md-9 col-lg-10 p-5">
                 <div class="hero-box p-5 rounded mb-5">
-
-                    <span class="badge bg-danger mb-3 fs-6">
-                        ŞEHRİN EFENDİLERİ ADMIN REHBERİ
-                    </span>
-
-                    <h1 class="fw-bold mb-4">
-                        Şehrin Efendileri Admin Eğitim Paneli
-                    </h1>
-
-                    <p class="lead mb-0">
-                        Sunucu düzeni, admin davranışı, ceza sistemi,
-                        hile kontrolü ve yönetim süreçleri için hazırlanmış
-                        kapsamlı admin rehberi.
-                    </p>
-
+                    <span class="badge bg-danger mb-3 fs-6">ŞEHRİN EFENDİLERİ ADMIN REHBERİ</span>
+                    <h1 class="fw-bold mb-4">Şehrin Efendileri Admin Eğitim Paneli</h1>
+                    <p class="lead mb-0">Sunucu düzeni, admin davranışı, ceza sistemi, hile kontrolü ve yönetim süreçleri için hazırlanmış kapsamlı admin rehberi.</p>
                 </div>
 
-                <!-- Kritik Uyarı -->
                 <div class="card custom-card p-4 mb-5 border border-danger">
-
-                    <h2 class="text-danger mb-4">
-                        ⚠ Kritik Uyarı
-                    </h2>
-
-                    <p>
-                        Adminlik güç gösterisi değildir.
-                        Yanlış işlem yapan admin,
-                        hile yapan oyuncudan daha fazla zarar verebilir.
-                    </p>
-
-                    <p class="mb-0">
-                        Kanıtsız işlem, ego savaşı,
-                        arkadaş kayırma ve yetki abuse davranışları
-                        doğrudan güven kaybına neden olur.
-                    </p>
-
+                    <h2 class="text-danger mb-4">⚠ Kritik Uyarı</h2>
+                    <p>Adminlik güç gösterisi değildir. Yanlış işlem yapan admin, hile yapan oyuncudan daha fazla zarar verebilir.</p>
+                    <p class="mb-0">Kanıtsız işlem, ego savaşı, arkadaş kayırma ve yetki abuse davranışları doğrudan güven kaybına neden olur.</p>
                 </div>
 
-                <!-- Temel Sistem -->
                 <div class="row mb-5">
-
-                    <!-- Fungun -->
                     <div class="col-lg-4 mb-4">
-
                         <div class="card custom-card h-100 p-4">
-
-                            <h3 class="mb-3 text-danger">
-                                🛡 Fungun Sistemi
-                            </h3>
-
-                            <p class="mb-0">
-                                Şüpheli oyuncular specte alınır,
-                                gerekli durumda Fungun taraması uygulanır.
-                                Suspicious sonuç direkt ID ban sebebidir.
-                            </p>
-
+                            <h3 class="mb-3 text-danger">🛡 Fungun Sistemi</h3>
+                            <p class="mb-0">Şüpheli oyuncular specte alınır, gerekli durumda Fungun taraması uygulanır. Suspicious sonuç direkt ID ban sebebidir.</p>
                         </div>
-
                     </div>
-
-                    <!-- Ban -->
                     <div class="col-lg-4 mb-4">
-
                         <div class="card custom-card h-100 p-4">
-
-                            <h3 class="mb-3 text-danger">
-                                ⛔ Ban Sistemi
-                            </h3>
-
-                            <p class="mb-0">
-                                Sunucuda geçici ban sistemi kullanılmaz.
-                                Ban işlemleri ID ban şeklinde ve süresiz uygulanır.
-                            </p>
-
+                            <h3 class="mb-3 text-danger">⛔ Ban Sistemi</h3>
+                            <p class="mb-0">Sunucuda geçici ban sistemi kullanılmaz. Ban işlemleri ID ban şeklinde ve süresiz uygulanır.</p>
                         </div>
-
                     </div>
-
-                    <!-- Gag -->
                     <div class="col-lg-4 mb-4">
-
                         <div class="card custom-card h-100 p-4">
-
-                            <h3 class="mb-3 text-danger">
-                                🔇 Gag Sistemi
-                            </h3>
-
-                            <p class="mb-0">
-                                Flood, spam ve chat bozucu davranışlarda
-                                geçici gag uygulanabilir.
-                                Maksimum gag süresi 1 gündür.
-                            </p>
-
+                            <h3 class="mb-3 text-danger">🔇 Gag Sistemi</h3>
+                            <p class="mb-0">Flood, spam ve chat bozucu davranışlarda geçici gag uygulanabilir. Maksimum gag süresi 1 gündür.</p>
                         </div>
-
                     </div>
-
                 </div>
 
-                <!-- Admin Davranışı -->
                 <div class="card custom-card p-4 mb-5">
-
-                    <h2 class="text-danger mb-4">
-                        📌 Admin Davranış Prensibi
-                    </h2>
-
+                    <h2 class="text-danger mb-4">📌 Admin Davranış Prensibi</h2>
                     <ul class="guide-list mb-0">
-
-                        <li>
-                            Emin olmadan işlem uygulanmaz.
-                        </li>
-
-                        <li>
-                            Oyuncularla gereksiz tartışmaya girilmez.
-                        </li>
-
-                        <li>
-                            Kişisel sinirle ceza verilmez.
-                        </li>
-
-                        <li>
-                            Kurallar herkese eşit uygulanır.
-                        </li>
-
-                        <li>
-                            Eğlence komutları abuse edilmez.
-                        </li>
-
-                        <li>
-                            Adminin görevi kavga etmek değil,
-                            sunucu düzenini korumaktır.
-                        </li>
-
+                        <li>Emin olmadan işlem uygulanmaz.</li>
+                        <li>Oyuncularla gereksiz tartışmaya girilmez.</li>
+                        <li>Kişisel sinirle ceza verilmez.</li>
+                        <li>Kurallar herkese eşit uygulanır.</li>
+                        <li>Eğlence komutları abuse edilmez.</li>
+                        <li>Adminin görevi kavga etmek değil, sunucu düzenini korumaktır.</li>
                     </ul>
-
                 </div>
 
-                <!-- Son Mesaj -->
                 <div class="card custom-card p-4 border border-success">
-
-                    <h3 class="text-success mb-3">
-                        🎯 Sonuç
-                    </h3>
-
-                    <p class="mb-0">
-                        İyi admin sürekli işlem yapan değil,
-                        gerektiği yerde doğru müdahaleyi yapan admindir.
-                    </p>
-
+                    <h3 class="text-success mb-3">🎯 Sonuç</h3>
+                    <p class="mb-0">İyi admin sürekli işlem yapan değil, gerektiği yerde doğru müdahaleyi yapan admindir.</p>
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Sayfa Açılınca En Üste Çık -->
-    <script>
-
-        window.addEventListener("pageshow", function () {
-
-            window.scrollTo(0, 0);
-
-        });
-
-    </script>
-
 </body>
-
 </html>
